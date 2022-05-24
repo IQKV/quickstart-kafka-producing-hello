@@ -1,6 +1,7 @@
 # Hello, World! - Kafka producer app
 
 [![Build Status](https://drone.ujar.org/api/badges/ujar-org/basics-kafka-producing-hello/status.svg?ref=refs/heads/main)](https://drone.ujar.org/ujar-org/basics-kafka-producing-hello)
+[![Quality Gate Status](https://sonarqube.ujar.org/api/project_badges/measure?project=ujar-org%3Abasics-kafka-producing-hello&metric=alert_status&token=506aba5404fe35cf8cce0db314883b5cbc9778ca)](https://sonarqube.ujar.org/dashboard?id=ujar-org%3Abasics-kafka-producing-hello)
 
 
 Minimal Spring Boot based sample of Kafka producer app.
