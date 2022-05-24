@@ -1,0 +1,26 @@
+spring :
+  application :
+    name : basics-kafka-producing-hello
+  kafka :
+    producer :
+      bootstrap-servers : ${KAFKA_BOOTSTRAP_SERVERS:${embedded.kafka.brokerList}}
+      properties :
+        security.protocol : PLAINTEXT
+    admin :
+      properties :
+        bootstrap.servers : ${KAFKA_BOOTSTRAP_SERVERS:${embedded.kafka.brokerList}}
+        security.protocol : PLAINTEXT
+    consumer :
+      bootstrap-servers : ${KAFKA_BOOTSTRAP_SERVERS:${embedded.kafka.brokerList}}
+      group-id : hello-world
+      auto-offset-reset : earliest
+      properties :
+        isolation.level : read_committed
+
+ujar :
+  kafka :
+    topics :
+      hello-world:
+        name : test.hello.world
+        partitions : 1
+        retention : 30s
