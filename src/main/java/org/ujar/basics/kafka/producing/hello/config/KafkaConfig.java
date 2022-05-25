@@ -13,7 +13,7 @@ import org.springframework.kafka.support.serializer.JsonSerde;
 import org.ujar.basics.kafka.producing.hello.model.Greeting;
 
 @Configuration
-class KafkaConfiguration {
+class KafkaConfig {
   @Bean
   public ProducerFactory<String, Greeting> reportMessageProducerFactory(KafkaProperties kafkaProperties) {
     try (var serde = new JsonSerde<>(Greeting.class, new ObjectMapper())) {

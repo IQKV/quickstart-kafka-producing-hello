@@ -16,7 +16,7 @@ import org.ujar.basics.kafka.producing.hello.model.Greeting;
 
 @Configuration
 @RequiredArgsConstructor
-public class KafkaTestConfiguration {
+public class KafkaTestConfig {
   @Bean
   public ConsumerFactory<String, Greeting> consumeGreetingConsumerFactory(KafkaProperties kafkaProperties) {
     var consumerProperties = kafkaProperties.getConsumer().buildProperties();
