@@ -44,7 +44,7 @@
 
     <properties>
         <sonar.exclusions>**/*Application.java</sonar.exclusions>
-        <sonar.coverage.exclusions>**/*Test.java,**/Test*.java</sonar.coverage.exclusions>
+        <sonar.coverage.exclusions>**/*Config*.java,**/*Properties.java,**/*Test.java,**/Test*.java</sonar.coverage.exclusions>
     </properties>
 
     <dependencies>
