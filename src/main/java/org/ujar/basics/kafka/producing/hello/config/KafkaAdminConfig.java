@@ -13,7 +13,7 @@ class KafkaAdminConfig {
   private final KafkaTopicsProperties topics;
 
   @Bean
-  public NewTopic helloWorldKafkaTopic() {
+  NewTopic helloWorldKafkaTopic() {
     var definition = topics.get(KafkaTopicsProperties.HELLO_WORLD);
     return TopicBuilder
         .name(definition.name())
