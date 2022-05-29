@@ -18,7 +18,7 @@ import org.ujar.basics.kafka.producing.hello.model.Greeting;
 @RequiredArgsConstructor
 public class KafkaTestConfig {
   @Bean
-  public ConsumerFactory<String, Greeting> consumeGreetingConsumerFactory(KafkaProperties kafkaProperties) {
+  ConsumerFactory<String, Greeting> consumeGreetingConsumerFactory(KafkaProperties kafkaProperties) {
     var consumerProperties = kafkaProperties.getConsumer().buildProperties();
     try (var serde = new JsonSerde<>(Greeting.class, new ObjectMapper())) {
       return new DefaultKafkaConsumerFactory<>(consumerProperties,
@@ -28,7 +28,7 @@ public class KafkaTestConfig {
   }
 
   @Bean
-  public ConcurrentKafkaListenerContainerFactory<String, Greeting> consumeGreetingKafkaListenerContainerFactory(
+  ConcurrentKafkaListenerContainerFactory<String, Greeting> consumeGreetingKafkaListenerContainerFactory(
       ConsumerFactory<String, Greeting> consumeGreetingConsumerFactory,
       @Value("${ujar.kafka.consumer.threads:2}") int threads) {
     ConcurrentKafkaListenerContainerFactory<String, Greeting> factory =
