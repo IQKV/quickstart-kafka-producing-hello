@@ -39,7 +39,7 @@ mvn package
 - Run **kafka-producing-hello** app:
 
 ```
-java -jar kafka-producing-hello/target/*.jar
+java -jar target/*.jar
 ```
 
 ### Tests
