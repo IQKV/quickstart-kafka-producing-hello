@@ -7,7 +7,7 @@ import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
 import org.springframework.context.annotation.Configuration;
 
-@AnalyzeClasses(packages = "org.ujar.basics.kafka.producer.hello")
+@AnalyzeClasses(packages = "org.ujar.basics.kafka.producing.hello")
 public class NamingConventionTest {
   @ArchTest
   private final ArchRule configurationShouldBeInConfigPackage =
