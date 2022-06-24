@@ -6,21 +6,43 @@ spring :
       bootstrap-servers : ${KAFKA_BOOTSTRAP_SERVERS:${embedded.kafka.brokerList}}
       properties :
         security.protocol : PLAINTEXT
-    admin :
-      properties :
-        bootstrap.servers : ${KAFKA_BOOTSTRAP_SERVERS:${embedded.kafka.brokerList}}
-        security.protocol : PLAINTEXT
     consumer :
       bootstrap-servers : ${KAFKA_BOOTSTRAP_SERVERS:${embedded.kafka.brokerList}}
       group-id : hello-world
       auto-offset-reset : earliest
       properties :
         isolation.level : read_committed
+    admin :
+      properties :
+        bootstrap.servers : ${KAFKA_BOOTSTRAP_SERVERS:${embedded.kafka.brokerList}}
+        security.protocol : PLAINTEXT
+
+  devtools :
+    add-properties : false
+    restart :
+      enabled : false
+    livereload :
+      enabled : false
+
+embedded :
+  kafka :
+    enabled : true
+    docker-image-version : 6.2.4
 
 ujar :
   kafka :
+    create-topics-on-startup : true
     topics :
-      hello-world:
+      hello-world :
         name : test.hello.world
         partitions : 1
         retention : 30s
+    error-handling :
+      dead-letter :
+        retention : 30s
+        suffix : .DLT
+      backoff :
+        initial-interval : 500ms
+        max-interval : 2s
+        max-retries : 4
+        multiplier : 1.5
