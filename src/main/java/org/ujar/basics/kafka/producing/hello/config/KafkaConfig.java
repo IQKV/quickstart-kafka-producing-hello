@@ -15,7 +15,7 @@ import org.ujar.basics.kafka.producing.hello.model.Greeting;
 @Configuration
 class KafkaConfig {
   @Bean
-  ProducerFactory<String, Greeting> reportMessageProducerFactory(KafkaProperties kafkaProperties) {
+  ProducerFactory<String, Greeting> greetingMessageProducerFactory(KafkaProperties kafkaProperties) {
     try (var serde = new JsonSerde<>(Greeting.class, new ObjectMapper())) {
       var producerProperties = kafkaProperties.getProducer().buildProperties();
       var producerFactory = new DefaultKafkaProducerFactory<>(producerProperties,
@@ -27,9 +27,9 @@ class KafkaConfig {
   }
 
   @Bean
-  KafkaTemplate<String, Greeting> reportMessageKafkaTemplate(
-      ProducerFactory<String, Greeting> reportMessageProducerFactory) {
-    return new KafkaTemplate<>(reportMessageProducerFactory);
+  KafkaTemplate<String, Greeting> greetingMessageKafkaTemplate(
+      ProducerFactory<String, Greeting> greetingMessageProducerFactory) {
+    return new KafkaTemplate<>(greetingMessageProducerFactory);
   }
 
   private String getTransactionPrefix() {
