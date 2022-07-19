@@ -51,6 +51,11 @@ logging :
     org.zalando.logbook.Logbook : TRACE
 
 management :
+  health :
+    livenessstate :
+      enabled : true
+    readinessstate :
+      enabled : true
   info :
     env :
       enabled : true
