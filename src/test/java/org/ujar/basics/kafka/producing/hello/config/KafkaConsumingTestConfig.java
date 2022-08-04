@@ -17,10 +17,10 @@ import org.ujar.basics.kafka.producing.hello.model.Greeting;
 import org.ujar.boot.starter.kafka.config.BaseKafkaConsumingConfig;
 
 @Configuration
-public class KafkaConsumingTestConfig extends BaseKafkaConsumingConfig {
+class KafkaConsumingTestConfig extends BaseKafkaConsumingConfig {
 
   @Autowired
-  public KafkaConsumingTestConfig(LocalValidatorFactoryBean validator) {
+  KafkaConsumingTestConfig(LocalValidatorFactoryBean validator) {
     super(validator);
   }
 
