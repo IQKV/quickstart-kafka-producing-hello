@@ -1,7 +1,7 @@
 # Hello, World! - Kafka producer app
 
-[![Build Status](https://drone.ujar.org/api/badges/ujar-org/basics-kafka-producing-hello/status.svg?ref=refs/heads/main)](https://drone.ujar.org/ujar-org/basics-kafka-producing-hello)
-[![Quality Gate Status](https://sonarqube.ujar.org/api/project_badges/measure?project=ujar-org%3Abasics-kafka-producing-hello&metric=alert_status&token=506aba5404fe35cf8cce0db314883b5cbc9778ca)](https://sonarqube.ujar.org/dashboard?id=ujar-org%3Abasics-kafka-producing-hello)
+[![Build Status](https://drone.c2a2.com/api/badges/ujar-org/basics-kafka-producing-hello/status.svg?ref=refs/heads/main)](https://drone.c2a2.com/ujar-org/basics-kafka-producing-hello)
+[![Quality Gate Status](https://sonarqube.c2a2.com/api/project_badges/measure?project=ujar-org%3Abasics-kafka-producing-hello&metric=alert_status&token=506aba5404fe35cf8cce0db314883b5cbc9778ca)](https://sonarqube.c2a2.com/dashboard?id=ujar-org%3Abasics-kafka-producing-hello)
 
 
 Minimal Spring Boot based sample of Kafka producer app.
@@ -47,7 +47,7 @@ java -jar target/*.jar
 The code follows [Google Code Conventions](https://google.github.io/styleguide/javaguide.html). Code
 quality is measured by:
 
-- [Sonarqube](https://sonarqube.ujar.org/dashboard?id=ujar-org%3Abasics-kafka-producing-hello)
+- [Sonarqube](https://sonarqube.c2a2.com/dashboard?id=ujar-org%3Abasics-kafka-producing-hello)
 - [PMD](https://pmd.github.io/)
 - [CheckStyle](https://checkstyle.sourceforge.io/)
 - [SpotBugs](https://spotbugs.github.io/)
