@@ -8,8 +8,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
-import org.ujar.bs.msg.kafka.producing.hello.model.Greeting;
 import org.ujar.boot.starter.kafka.config.KafkaTopicDefinitionProperties;
+import org.ujar.bs.msg.kafka.producing.hello.model.Greeting;
 
 @Component
 @Slf4j

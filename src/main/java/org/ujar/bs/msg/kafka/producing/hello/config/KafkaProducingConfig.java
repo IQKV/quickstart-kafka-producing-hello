@@ -5,8 +5,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
-import org.ujar.bs.msg.kafka.producing.hello.model.Greeting;
 import org.ujar.boot.starter.kafka.config.BaseKafkaProducingConfig;
+import org.ujar.bs.msg.kafka.producing.hello.model.Greeting;
 
 @Configuration
 class KafkaProducingConfig extends BaseKafkaProducingConfig {
