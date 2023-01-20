@@ -1,11 +1,11 @@
-package org.ujar.basics.kafka.producing.hello.config;
+package org.ujar.bs.msg.kafka.producing.hello.config;
 
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
-import org.ujar.basics.kafka.producing.hello.model.Greeting;
+import org.ujar.bs.msg.kafka.producing.hello.model.Greeting;
 import org.ujar.boot.starter.kafka.config.BaseKafkaProducingConfig;
 
 @Configuration
