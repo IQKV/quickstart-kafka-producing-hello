@@ -1,6 +1,6 @@
-package org.ujar.basics.kafka.producing.hello.config;
+package org.ujar.bs.msg.kafka.producing.hello.config;
 
-import static org.ujar.basics.kafka.producing.hello.config.Constants.TOPIC_DEFINITION_HELLO_WORLD;
+import static org.ujar.bs.msg.kafka.producing.hello.config.Constants.TOPIC_DEFINITION_HELLO_WORLD;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;

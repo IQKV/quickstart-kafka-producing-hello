@@ -17,7 +17,7 @@ info :
 
 spring :
   application :
-    name : basics-kafka-producing-hello
+    name : bs-msg-kafka-producing-hello
   jackson :
     default-property-inclusion : NON_NULL
   lifecycle :
