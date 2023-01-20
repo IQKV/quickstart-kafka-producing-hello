@@ -1,4 +1,4 @@
-package org.ujar.basics.kafka.producing.hello;
+package org.ujar.bs.msg.kafka.producing.hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
