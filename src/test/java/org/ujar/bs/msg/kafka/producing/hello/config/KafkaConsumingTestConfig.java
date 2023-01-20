@@ -13,8 +13,8 @@ import org.springframework.kafka.core.KafkaOperations;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.listener.DefaultErrorHandler;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
-import org.ujar.bs.msg.kafka.producing.hello.model.Greeting;
 import org.ujar.boot.starter.kafka.config.BaseKafkaConsumingConfig;
+import org.ujar.bs.msg.kafka.producing.hello.model.Greeting;
 
 @Configuration
 class KafkaConsumingTestConfig extends BaseKafkaConsumingConfig {
