@@ -5,7 +5,7 @@ build :
 
 spring :
   application :
-    name : basics-kafka-producing-hello
+    name : bs-msg-kafka-producing-hello
   kafka :
     producer :
       bootstrap-servers : ${KAFKA_BOOTSTRAP_SERVERS:${embedded.kafka.brokerList}}

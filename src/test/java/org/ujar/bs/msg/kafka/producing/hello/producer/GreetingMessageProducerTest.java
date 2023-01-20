@@ -1,4 +1,4 @@
-package org.ujar.basics.kafka.producing.hello.producer;
+package org.ujar.bs.msg.kafka.producing.hello.producer;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -9,8 +9,8 @@ import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.ujar.basics.kafka.producing.hello.consumer.GreetingMessageConsumer;
-import org.ujar.basics.kafka.producing.hello.model.Greeting;
+import org.ujar.bs.msg.kafka.producing.hello.consumer.GreetingMessageConsumer;
+import org.ujar.bs.msg.kafka.producing.hello.model.Greeting;
 
 @SpringBootTest
 class GreetingMessageProducerTest {
