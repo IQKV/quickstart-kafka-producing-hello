@@ -25,7 +25,7 @@ public class GreetingMessageProducer {
   public void send(Greeting message) {
     final var key = UUID.randomUUID().toString();
     log.info("( {} ) Send message, key: {}, value: {}", Thread.currentThread().getName(), key, message);
-    kafkaTemplate.executeInTransaction(op -> op.usingCompletableFuture().send(
+    kafkaTemplate.executeInTransaction(op -> op.send(
         topicDefinitions.get(TOPIC_DEFINITION_HELLO_WORLD).name(),
         key,
         message)
