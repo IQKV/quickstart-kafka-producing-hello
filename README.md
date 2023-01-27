@@ -1,9 +1,5 @@
 # Hello, World! - Kafka producer app
 
-[![Build Status](http://iaolg9igjr3tghootxslfe.webrelay.io/api/badges/ujar-org/bs-msg-kafka-producing-hello/status.svg?ref=refs/heads/main)](http://iaolg9igjr3tghootxslfe.webrelay.io/ujar-org/bs-msg-kafka-producing-hello)
-[![Quality Gate Status](https://sonarqube.c2a2.com/api/project_badges/measure?project=ujar-org%3Abs-msg-kafka-producing-hello&metric=alert_status&token=506aba5404fe35cf8cce0db314883b5cbc9778ca)](https://sonarqube.c2a2.com/dashboard?id=ujar-org%3Abs-msg-kafka-producing-hello)
-
-
 Minimal Spring Boot based sample of Kafka producer app.
 
 ### Pre-Requisites to run this example locally
