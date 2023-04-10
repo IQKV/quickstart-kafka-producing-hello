@@ -1,6 +1,6 @@
 # Hello, World! - Kafka producer app
 
-Minimal Spring Boot based sample of Kafka producer app.
+Minimal Spring Boot based sample Kafka producer app.
 
 ### Pre-Requisites to run this example locally
 
