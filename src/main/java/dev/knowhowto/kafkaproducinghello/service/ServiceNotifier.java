@@ -1,10 +1,10 @@
-package org.ujar.kafkaproducinghello.service;
+package dev.knowhowto.kafkaproducinghello.service;
 
+import dev.knowhowto.kafkaproducinghello.model.Greeting;
+import dev.knowhowto.kafkaproducinghello.producer.GreetingMessageProducer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import org.ujar.kafkaproducinghello.model.Greeting;
-import org.ujar.kafkaproducinghello.producer.GreetingMessageProducer;
 
 @Service
 @RequiredArgsConstructor

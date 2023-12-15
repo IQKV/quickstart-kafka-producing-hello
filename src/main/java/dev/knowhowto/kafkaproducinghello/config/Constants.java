@@ -1,4 +1,4 @@
-package org.ujar.kafkaproducinghello.config;
+package dev.knowhowto.kafkaproducinghello.config;
 
 /**
  * Application constants.

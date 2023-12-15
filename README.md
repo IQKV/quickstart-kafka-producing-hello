@@ -8,7 +8,7 @@ Minimal Spring Boot based sample Kafka producer app.
 - Clone source code to the local machine:
 
 ```
-git clone https://github.com/uJarOrg/quickstart-kafka-producing-hello.git
+git clone https://github.com/KnowHowSpringBoot/quickstart-kafka-producing-hello.git
 
 cd quickstart-kafka-producing-hello
 ```
