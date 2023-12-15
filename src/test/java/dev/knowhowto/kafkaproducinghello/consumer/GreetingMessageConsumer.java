@@ -1,15 +1,15 @@
-package org.ujar.kafkaproducinghello.consumer;
+package dev.knowhowto.kafkaproducinghello.consumer;
 
 import java.util.concurrent.CountDownLatch;
 
+import dev.knowhowto.kafkaproducinghello.model.Greeting;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.iqkv.boot.kafka.exception.ConsumerRecordProcessingException;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
-import org.ujar.boot.kafka.exception.ConsumerRecordProcessingException;
-import org.ujar.kafkaproducinghello.model.Greeting;
 
 @Component
 @RequiredArgsConstructor
@@ -21,7 +21,7 @@ public class GreetingMessageConsumer {
   private String payload;
 
   @KafkaListener(containerFactory = "consumeGreetingKafkaListenerContainerFactory",
-                 topics = "${ujar.kafka.topics.hello-world.name}",
+                 topics = "${iqkv.kafka.topics.hello-world.name}",
                  groupId = "${spring.kafka.consumer.group-id}")
   public void consume(ConsumerRecord<String, Greeting> consumerRecord) {
     try {

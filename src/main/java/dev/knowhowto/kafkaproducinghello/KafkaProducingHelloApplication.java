@@ -1,4 +1,4 @@
-package org.ujar.kafkaproducinghello;
+package dev.knowhowto.kafkaproducinghello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

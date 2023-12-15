@@ -1,5 +1,5 @@
 {
-    "name": "uquickstart-kafka-producing-hello",
+    "name": "@know-how-spring-boot/quickstart-kafka-producing-hello",
     "version": "23.0.0",
     "description": "Provide an optional Git commit hooks.",
     "private": true,
