@@ -1,19 +1,20 @@
-package org.ujar.kafkaproducinghello.config;
+package dev.knowhowto.kafkaproducinghello.config;
 
+import dev.knowhowto.kafkaproducinghello.model.Greeting;
+import org.iqkv.boot.kafka.config.BaseKafkaProducingConfig;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import org.springframework.boot.ssl.SslBundles;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
-import org.ujar.boot.kafka.config.BaseKafkaProducingConfig;
-import org.ujar.kafkaproducinghello.model.Greeting;
 
 @Configuration
 class KafkaProducingConfig extends BaseKafkaProducingConfig {
 
   @Bean
-  ProducerFactory<String, Greeting> greetingMessageProducerFactory(KafkaProperties kafkaProperties) {
-    return producerFactory(Greeting.class, kafkaProperties);
+  ProducerFactory<String, Greeting> greetingMessageProducerFactory(KafkaProperties kafkaProperties, SslBundles sslBundles) {
+    return producerFactory(Greeting.class, kafkaProperties, sslBundles);
   }
 
   @Bean
