@@ -2,10 +2,10 @@ package dev.knowhowto.kafkaproducinghello.config;
 
 import static dev.knowhowto.kafkaproducinghello.config.Constants.TOPIC_DEFINITION_HELLO_WORLD;
 
+import com.iqkv.boot.kafka.config.KafkaTopicDefinitionProperties;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.config.TopicConfig;
-import com.iqkv.boot.kafka.config.KafkaTopicDefinitionProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

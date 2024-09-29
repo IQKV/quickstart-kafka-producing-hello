@@ -1,7 +1,7 @@
 package dev.knowhowto.kafkaproducinghello.config;
 
-import dev.knowhowto.kafkaproducinghello.model.Greeting;
 import com.iqkv.boot.kafka.config.BaseKafkaProducingConfig;
+import dev.knowhowto.kafkaproducinghello.model.Greeting;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.boot.ssl.SslBundles;
 import org.springframework.context.annotation.Bean;
