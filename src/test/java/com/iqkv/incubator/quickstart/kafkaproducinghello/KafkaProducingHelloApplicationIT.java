@@ -1,4 +1,4 @@
-package dev.knowhowto.kafkaproducinghello;
+package com.iqkv.incubator.quickstart.kafkaproducinghello;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

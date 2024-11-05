@@ -1,4 +1,4 @@
-package dev.knowhowto.kafkaproducinghello.config;
+package com.iqkv.incubator.quickstart.kafkaproducinghello.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;

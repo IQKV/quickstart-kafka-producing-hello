@@ -1,6 +1,6 @@
-package dev.knowhowto.kafkaproducinghello.config;
+package com.iqkv.incubator.quickstart.kafkaproducinghello.config;
 
-import static dev.knowhowto.kafkaproducinghello.config.Constants.TOPIC_DEFINITION_HELLO_WORLD;
+import static com.iqkv.incubator.quickstart.kafkaproducinghello.config.Constants.TOPIC_DEFINITION_HELLO_WORLD;
 
 import com.iqkv.boot.kafka.config.KafkaTopicDefinitionProperties;
 import lombok.RequiredArgsConstructor;

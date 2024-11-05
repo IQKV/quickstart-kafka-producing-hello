@@ -1,4 +1,4 @@
-package dev.knowhowto.kafkaproducinghello;
+package com.iqkv.incubator.quickstart.kafkaproducinghello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
