@@ -1,9 +1,9 @@
-package dev.knowhowto.kafkaproducinghello.config;
+package com.iqkv.incubator.quickstart.kafkaproducinghello.config;
 
 import java.util.HashMap;
 
 import com.iqkv.boot.kafka.config.BaseKafkaConsumingConfig;
-import dev.knowhowto.kafkaproducinghello.model.Greeting;
+import com.iqkv.incubator.quickstart.kafkaproducinghello.model.Greeting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;

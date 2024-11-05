@@ -1,7 +1,7 @@
-package dev.knowhowto.kafkaproducinghello.service;
+package com.iqkv.incubator.quickstart.kafkaproducinghello.service;
 
-import dev.knowhowto.kafkaproducinghello.model.Greeting;
-import dev.knowhowto.kafkaproducinghello.producer.GreetingMessageProducer;
+import com.iqkv.incubator.quickstart.kafkaproducinghello.model.Greeting;
+import com.iqkv.incubator.quickstart.kafkaproducinghello.producer.GreetingMessageProducer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
