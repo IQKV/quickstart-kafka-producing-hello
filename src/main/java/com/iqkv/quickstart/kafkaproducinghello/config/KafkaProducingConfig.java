@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package com.iqkv.incubator.quickstart.kafkaproducinghello.config;
+package com.iqkv.quickstart.kafkaproducinghello.config;
 
-import com.iqkv.boot.kafka.config.BaseKafkaProducingConfig;
-import com.iqkv.incubator.quickstart.kafkaproducinghello.model.Greeting;
+import expert.uses.boot.kafka.config.BaseKafkaProducingConfig;
+
+import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.boot.ssl.SslBundles;
 import org.springframework.context.annotation.Bean;

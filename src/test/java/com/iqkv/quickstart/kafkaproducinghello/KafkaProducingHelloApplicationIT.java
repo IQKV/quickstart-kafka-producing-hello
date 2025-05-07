@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.iqkv.incubator.quickstart.kafkaproducinghello;
+package com.iqkv.quickstart.kafkaproducinghello;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

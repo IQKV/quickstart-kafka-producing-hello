@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.iqkv.incubator.quickstart</groupId>
+    <groupId>com.iqkv</groupId>
     <artifactId>quickstart-kafka-producing-hello</artifactId>
     <version>25.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -32,7 +32,7 @@
     </developers>
 
     <parent>
-        <groupId>com.iqkv.boot</groupId>
+        <groupId>expertness</groupId>
         <artifactId>boot-parent-pom</artifactId>
         <version>25.0.0-SNAPSHOT</version>
     </parent>
@@ -45,12 +45,12 @@
         <sonar.coverage.exclusions>**/*Config*.java,**/*Properties.java,**/*Test.java,**/Test*.java</sonar.coverage.exclusions>
         <checkstyle.skip>false</checkstyle.skip>
         <maven.gitcommitid.skip>false</maven.gitcommitid.skip>
-        <start-class>com.iqkv.incubator.quickstart.kafkaproducinghello.KafkaProducingHelloApplication</start-class>
+        <start-class>com.iqkv.quickstart.kafkaproducinghello.KafkaProducingHelloApplication</start-class>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.iqkv.boot</groupId>
+            <groupId>expertness</groupId>
             <artifactId>boot-starter-kafka</artifactId>
         </dependency>
         <dependency>
