@@ -14,11 +14,12 @@
  * limitations under the License.
  */
 
-package com.iqkv.incubator.quickstart.kafkaproducinghello.config;
+package com.iqkv.quickstart.kafkaproducinghello.config;
 
-import static com.iqkv.incubator.quickstart.kafkaproducinghello.config.Constants.TOPIC_DEFINITION_HELLO_WORLD;
+import static com.iqkv.quickstart.kafkaproducinghello.config.Constants.TOPIC_DEFINITION_HELLO_WORLD;
 
-import com.iqkv.boot.kafka.config.KafkaTopicDefinitionProperties;
+import expert.uses.boot.kafka.config.KafkaTopicDefinitionProperties;
+
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.config.TopicConfig;
@@ -29,7 +30,7 @@ import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
 @RequiredArgsConstructor
-@ConditionalOnProperty(value = "application-settings.kafka.admin.create-topics", havingValue = "true")
+@ConditionalOnProperty(value = "expertness.kafka.admin.create-topics", havingValue = "true")
 class KafkaAdminConfig {
   private final KafkaTopicDefinitionProperties topicDefinitions;
 

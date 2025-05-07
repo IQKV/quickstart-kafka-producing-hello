@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.iqkv.incubator.quickstart.kafkaproducinghello.producer;
+package com.iqkv.quickstart.kafkaproducinghello.producer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
 
 import java.util.concurrent.TimeUnit;
 
-import com.iqkv.incubator.quickstart.kafkaproducinghello.consumer.GreetingMessageConsumer;
-import com.iqkv.incubator.quickstart.kafkaproducinghello.model.Greeting;
+import com.iqkv.quickstart.kafkaproducinghello.consumer.GreetingMessageConsumer;
+import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
 import org.hamcrest.MatcherAssert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

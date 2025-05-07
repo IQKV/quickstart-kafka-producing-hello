@@ -14,12 +14,21 @@
  * limitations under the License.
  */
 
-package com.iqkv.incubator.quickstart.kafkaproducinghello.config;
+package com.iqkv.quickstart.kafkaproducinghello.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
-@EnableScheduling
-class ApplicationConfig {
+@EnableWebSecurity
+class WebSecurityConfig {
+
+  @Bean
+  SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    http.authorizeHttpRequests((requests) -> requests.anyRequest().permitAll());
+    return http.build();
+  }
 }

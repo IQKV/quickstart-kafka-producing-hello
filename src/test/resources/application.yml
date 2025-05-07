@@ -31,7 +31,7 @@ embedded :
   kafka :
     enabled : true
 
-application-settings :
+expertness :
   info :
     description : '@project.description@'
     relative-path : '/'

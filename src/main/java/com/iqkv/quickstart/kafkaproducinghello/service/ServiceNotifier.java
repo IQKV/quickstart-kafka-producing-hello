@@ -14,17 +14,22 @@
  * limitations under the License.
  */
 
-package com.iqkv.incubator.quickstart.kafkaproducinghello;
+package com.iqkv.quickstart.kafkaproducinghello.service;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup;
+import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
+import com.iqkv.quickstart.kafkaproducinghello.producer.GreetingMessageProducer;
+import lombok.RequiredArgsConstructor;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 
-@SpringBootApplication
-public class KafkaProducingHelloApplication {
-  public static void main(String[] args) {
-    SpringApplication springApplication = new SpringApplication(KafkaProducingHelloApplication.class);
-    springApplication.setApplicationStartup(new BufferingApplicationStartup(2048));
-    springApplication.run(args);
+@Service
+@RequiredArgsConstructor
+public class ServiceNotifier {
+
+  private final GreetingMessageProducer messageProducer;
+
+  @Scheduled(fixedDelay = 10000)
+  public void scheduledCall() {
+    messageProducer.send(new Greeting("Hello, World!"));
   }
 }

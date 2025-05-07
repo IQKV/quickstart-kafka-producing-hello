@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.iqkv.incubator.quickstart.kafkaproducinghello.config;
+package com.iqkv.quickstart.kafkaproducinghello.config;
 
 import java.util.HashMap;
 
-import com.iqkv.boot.kafka.config.BaseKafkaConsumingConfig;
-import com.iqkv.incubator.quickstart.kafkaproducinghello.model.Greeting;
+import expert.uses.boot.kafka.config.BaseKafkaConsumingConfig;
+
+import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
@@ -50,7 +51,7 @@ class KafkaConsumingTestConfig extends BaseKafkaConsumingConfig {
   @Bean
   ConcurrentKafkaListenerContainerFactory<String, Greeting> consumeGreetingKafkaListenerContainerFactory(
       ConsumerFactory<String, Greeting> consumeGreetingConsumerFactory,
-      @Value("${iqkv.kafka.consumer.threads:2}") int threads, DefaultErrorHandler errorHandler) {
+      @Value("${expertness.kafka.consumer.threads:2}") int threads, DefaultErrorHandler errorHandler) {
     return containerFactory(consumeGreetingConsumerFactory, threads, errorHandler);
   }
 

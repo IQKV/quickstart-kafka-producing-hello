@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.iqkv.incubator.quickstart.kafkaproducinghello.consumer;
+package com.iqkv.quickstart.kafkaproducinghello.consumer;
 
 import java.util.concurrent.CountDownLatch;
 
-import com.iqkv.boot.kafka.exception.ConsumerRecordProcessingException;
-import com.iqkv.incubator.quickstart.kafkaproducinghello.model.Greeting;
+import expert.uses.boot.kafka.exception.ConsumerRecordProcessingException;
+
+import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -37,7 +38,7 @@ public class GreetingMessageConsumer {
   private String payload;
 
   @KafkaListener(containerFactory = "consumeGreetingKafkaListenerContainerFactory",
-                 topics = "${iqkv.kafka.topics.hello-world.name}",
+                 topics = "${expertness.kafka.topics.hello-world.name}",
                  groupId = "${spring.kafka.consumer.group-id}")
   public void consume(ConsumerRecord<String, Greeting> consumerRecord) {
     try {
