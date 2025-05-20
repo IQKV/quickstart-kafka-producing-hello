@@ -9,7 +9,7 @@ Pre-Requisites to run this example locally
 - Setup git command line tool (https://help.github.com/articles/set-up-git)
 - Clone source code to the local machine:
 
-```
+```bash
 git clone https://github.com/IQKV/quickstart-kafka-producing-hello.git
 
 cd quickstart-kafka-producing-hello
@@ -19,7 +19,7 @@ cd quickstart-kafka-producing-hello
 - Add new version of Docker Compose [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 - Spin-up single instance of Kafka broker, ZooKeeper by running command:
 
-```
+```bash
 docker compose -f compose.yaml up -d
 ```
 
@@ -30,19 +30,19 @@ using [Maven](https://spring.io/guides/gs/maven/). You can build a jar files and
 
 - Create jar packages:
 
-```
+```bash
 ./mvnw package
 ```
 
 - Run **quickstart-kafka-producing-hello** app:
 
-```
+```bash
 java -jar target/*.jar
 ```
 
 You might also want to use Maven's `spring-boot:run` goal - applications run in an exploded form, as they do in your IDE:
 
-```
+```bash
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=local -P dev
 ```
 
@@ -59,13 +59,13 @@ quality is measured by:
 
 ### Tests
 
-This project has standard JUnit tests. To run them execute this command:
+This project contains a JUnit tests, Hamcrest matchers, Mockito test doubles, Wiremock stubs, etc. You can run the test suite using
 
-```
+```bash
 ./mvnw verify -P use-testcontainers
 ```
 
-It is mandatory to keep test code coverage not below **80** percents and cover all business logic and edge cases.
+The minimum percentage of code coverage required for the workflow to pass is **80 %**.
 
 > ### Versioning
 >
