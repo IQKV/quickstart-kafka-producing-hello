@@ -59,7 +59,7 @@ quality is measured by:
 
 ### Tests
 
-This project contains a JUnit tests, Hamcrest matchers, Mockito test doubles, Wiremock stubs, etc. You can run the test suite using
+This project contains JUnit tests, Hamcrest matchers, Mockito test doubles, Wiremock stubs, etc. You can run the test suite using
 
 ```bash
 ./mvnw verify -P use-testcontainers
