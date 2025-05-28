@@ -18,8 +18,7 @@ package com.iqkv.quickstart.kafkaproducinghello.config;
 
 import java.util.HashMap;
 
-import expert.uses.boot.kafka.config.BaseKafkaConsumingConfig;
-
+import com.iqkv.boot.kafka.config.BaseKafkaConsumingConfig;
 import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

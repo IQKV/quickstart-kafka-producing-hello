@@ -16,8 +16,7 @@
 
 package com.iqkv.quickstart.kafkaproducinghello.config;
 
-import expert.uses.boot.kafka.config.BaseKafkaProducingConfig;
-
+import com.iqkv.boot.kafka.config.BaseKafkaProducingConfig;
 import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.boot.ssl.SslBundles;

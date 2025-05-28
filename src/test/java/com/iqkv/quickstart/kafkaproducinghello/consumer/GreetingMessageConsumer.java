@@ -18,8 +18,7 @@ package com.iqkv.quickstart.kafkaproducinghello.consumer;
 
 import java.util.concurrent.CountDownLatch;
 
-import expert.uses.boot.kafka.exception.ConsumerRecordProcessingException;
-
+import com.iqkv.boot.kafka.exception.ConsumerRecordProcessingException;
 import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

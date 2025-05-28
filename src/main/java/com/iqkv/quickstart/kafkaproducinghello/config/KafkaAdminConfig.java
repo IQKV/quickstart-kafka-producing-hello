@@ -18,8 +18,7 @@ package com.iqkv.quickstart.kafkaproducinghello.config;
 
 import static com.iqkv.quickstart.kafkaproducinghello.config.Constants.TOPIC_DEFINITION_HELLO_WORLD;
 
-import expert.uses.boot.kafka.config.KafkaTopicDefinitionProperties;
-
+import com.iqkv.boot.kafka.config.KafkaTopicDefinitionProperties;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.config.TopicConfig;
