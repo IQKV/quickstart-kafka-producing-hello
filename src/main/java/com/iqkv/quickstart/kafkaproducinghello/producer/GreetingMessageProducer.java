@@ -20,8 +20,7 @@ import static com.iqkv.quickstart.kafkaproducinghello.config.Constants.TOPIC_DEF
 
 import java.util.UUID;
 
-import expert.uses.boot.kafka.config.KafkaTopicDefinitionProperties;
-
+import com.iqkv.boot.kafka.config.KafkaTopicDefinitionProperties;
 import com.iqkv.quickstart.kafkaproducinghello.model.Greeting;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
