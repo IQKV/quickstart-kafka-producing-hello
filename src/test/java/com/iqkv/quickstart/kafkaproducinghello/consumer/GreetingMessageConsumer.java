@@ -37,7 +37,7 @@ public class GreetingMessageConsumer {
   private String payload;
 
   @KafkaListener(containerFactory = "consumeGreetingKafkaListenerContainerFactory",
-                 topics = "${expertness.kafka.topics.hello-world.name}",
+                 topics = "${application-configuration.kafka.topics.hello-world.name}",
                  groupId = "${spring.kafka.consumer.group-id}")
   public void consume(ConsumerRecord<String, Greeting> consumerRecord) {
     try {

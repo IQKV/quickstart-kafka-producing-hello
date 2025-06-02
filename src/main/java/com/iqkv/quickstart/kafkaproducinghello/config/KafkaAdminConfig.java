@@ -29,7 +29,7 @@ import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
 @RequiredArgsConstructor
-@ConditionalOnProperty(value = "expertness.kafka.admin.create-topics", havingValue = "true")
+@ConditionalOnProperty(value = "application-configuration.kafka.admin.create-topics", havingValue = "true")
 class KafkaAdminConfig {
   private final KafkaTopicDefinitionProperties topicDefinitions;
 
