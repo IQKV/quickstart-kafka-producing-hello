@@ -50,7 +50,7 @@ class KafkaConsumingTestConfig extends BaseKafkaConsumingConfig {
   @Bean
   ConcurrentKafkaListenerContainerFactory<String, Greeting> consumeGreetingKafkaListenerContainerFactory(
       ConsumerFactory<String, Greeting> consumeGreetingConsumerFactory,
-      @Value("${expertness.kafka.consumer.threads:2}") int threads, DefaultErrorHandler errorHandler) {
+      @Value("${application-configuration.kafka.consumer.threads:2}") int threads, DefaultErrorHandler errorHandler) {
     return containerFactory(consumeGreetingConsumerFactory, threads, errorHandler);
   }
 
