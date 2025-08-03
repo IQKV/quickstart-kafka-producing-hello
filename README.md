@@ -48,7 +48,7 @@ You might also want to use Maven's `spring-boot:run` goal - applications run in 
 
 ## Code conventions
 
-The code follows [Google Code Conventions](https://google.github.io/styleguide/javaguide.html). Code
+The code adheres to the [Google Code Conventions](https://google.github.io/styleguide/javaguide.html). Code
 quality is measured by:
 
 - [SonarQube](https://docs.sonarsource.com/)
