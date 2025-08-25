@@ -16,20 +16,20 @@ Minimal Spring Boot Kafka producer that periodically sends a greeting message to
 
 ## ⚡ Quickstart
 
-1) Clone and open the project
+1. Clone and open the project
 
 ```bash
 git clone https://github.com/IQKV/quickstart-kafka-producing-hello.git
 cd quickstart-kafka-producing-hello
 ```
 
-2) Start Kafka and observability stack (ZooKeeper, Kafka broker, Prometheus, Grafana)
+2. Start Kafka and observability stack (ZooKeeper, Kafka broker, Prometheus, Grafana)
 
 ```bash
 docker compose -f compose.yaml up -d
 ```
 
-3) Run the app (local profile + dev tools)
+3. Run the app (local profile + dev tools)
 
 ```bash
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=local -P dev
@@ -47,10 +47,12 @@ java -jar target/*.jar
 Key properties and environment variables (defaults shown):
 
 - **Kafka connection**
+
   - `KAFKA_BOOTSTRAP_SERVERS` (default `localhost:9092`)
   - `KAFKA_SECURITY_PROTOCOL` (default `PLAINTEXT`)
 
 - **Topic definition (application-configuration.kafka.topics.hello-world)**
+
   - `KAFKA_TOPIC_HELLO_WORLD` (topic name, default `hello.world`)
   - `KAFKA_TOPIC_PARTITIONS_HELLO_WORLD` (default `2`)
   - `KAFKA_TOPIC_RETENTION_HELLO_WORLD` (default `30m`)
